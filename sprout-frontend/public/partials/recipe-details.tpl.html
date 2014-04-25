@@ -1,0 +1,18 @@
+<h3>{{ recipe.name }}</h3>
+
+<br>
+
+<p>
+    <label>Description</label>
+
+    <br>
+    {{ recipe.recipe_description }}
+</p>
+<p>
+    <br>
+    <label>Cook Time</label>
+    <br>
+    {{ recipe.cook_time }}
+</p>
+<br>
+<a class="btn btn-success" href="#/edit-recipe/{{ recipe.id }}">Edit This Recipe</a>

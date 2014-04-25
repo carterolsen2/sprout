@@ -1,0 +1,25 @@
+<label>Name</label>
+<input type="text" ng-model="recipe.name"/>
+<br>
+<br>
+<label>Description</label>
+<input type="text" ng-model="recipe.recipe_description"/>
+<br>
+<br>
+<label>Cook Time</label>
+<input type="text" ng-model="recipe.cook_time"/>
+<br>
+<br>
+<label>Cook Method</label>
+<select type="text" ng-model="recipe.cook_method"
+        ng-options="method.stored_name as method.printed_name for method in methods"></select>
+<br>
+<br>
+<button ng-click="saveNewRecipe()">Add Item</button>
+<br>
+<br>
+{{ item }}
+<br>
+<br>
+<p>{{ status }}</p>
+
