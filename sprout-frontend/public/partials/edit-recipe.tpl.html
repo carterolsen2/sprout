@@ -14,10 +14,7 @@
 <select type="text" ng-model="recipe.cook_method"
         ng-options="method.stored_name as method.printed_name for method in methods"></select>
 <br>
-
-
 {{ item }}
-
 <p>{{ status }}</p>
 <br>
 &nbsp<button class="btn btn-danger" ng-click="deleteRecipe()">Delete</button>
@@ -26,4 +23,3 @@
 {{ item }}
 <br>
 <p>{{ status }}</p>
-

@@ -1,12 +1,32 @@
-<label>Search by name: </label> &nbsp <input type="text" ng-model="search.name">
-&nbsp<a class="btn btn-xs btn-success" href="#/add-recipe/{{ recipe.id }}">Add A Recipe</a>
+<label style="padding-top: 25px; padding-left: 15px;">Search by name: </label> &nbsp <input
+        type="text" ng-model="search.name">&nbsp<a class="btn btn-xs btn-success" href="#/add-recipe/{{ recipe.id }}">Add
+    A Recipe</a>
+<br>
+<label style="padding-top: 25px; padding-left: 15px;">Search by tag: </label> &nbsp <input type="text"
+                                                                                           ng-model="search.tag">
+<br>
+<br>
 
-<div ng-repeat="recipe in recipes | filter:search">
-    <p>
-        <a href="#/recipe-details/{{ recipe.id }}">Recipe name: {{ recipe.name }}</a>
+<br>
 
-    <a class="btn btn-xs btn-success" href="#/edit-recipe/{{ recipe.id }}">Edit</a>
-    </p>
-    <p>Recipe cook time: {{ recipe.cook_time }}</p>
-    <p>Recipe description: {{ recipe.recipe_description }}</p>
+<div class="container, col-md-5" style="margin-left: 90px;">
+    <div class="block" ng-repeat="recipe in recipes | filter:search">
+        <p>
+            <a href="#/recipe-details/{{ recipe.id }}">{{ recipe.name }}</a>
+            <a class="btn btn-xs btn-success" href="#/edit-recipe/{{ recipe.id }}">Edit</a>
+        </p>
+
+        <div class="block-info">
+            <div ><img class="recipe-thumbnail" src="{{ recipe.photo }}"/></div>
+            <p>Cook time: {{ recipe.cook_time }}</p>
+
+            <p>Description: {{ recipe.recipe_description }}</p>
+            <!--        Ingredients:
+        <p ng-repeat="ingredient in recipe.ingredients">
+            {{ ingredient.name }}
+        </p>-->
+            <span ng-repeat="tag in recipe.tags" class="label label-xs label-success" ng-bind="tag.name"> </span>
+            </p>
+        </div>
+    </div>
 </div>

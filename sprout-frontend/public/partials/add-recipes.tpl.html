@@ -6,20 +6,66 @@
 <input type="text" ng-model="recipe.recipe_description"/>
 <br>
 <br>
+{{ recipe.photo }}
+<img src="{{ recipe.photo }}"/>
 <label>Cook Time</label>
 <input type="text" ng-model="recipe.cook_time"/>
 <br>
+<br>
+<label>Ingredients</label>
+<br>
+<input type="text" ng-model="ingredientName" placeholder="Enter an Ingredient">
+<input type="text" ng-model="glycemicIndex" placeholder="Glycemic Index">
+<button ng-click="saveIngredient(ingredientName)">Add Ingredient</button>
+
+<ol>
+    <li ng-repeat="ingredient in recipe.ingredients">
+        <span ng-bind="ingredient.name"></span>
+        <span ng-bind="ingredient.glycemic_index"></span>
+    </li>
+</ol>
 <br>
 <label>Cook Method</label>
 <select type="text" ng-model="recipe.cook_method"
         ng-options="method.stored_name as method.printed_name for method in methods"></select>
 <br>
+<!--<label>Ingredients</label>
+<input type="text" ng-model="searchIngredient.name">
+<p ng-repeat="ingredient in ingredients | filter:searchIngredient">
+    <a href="javascript:void(0);"
+       ng-click="addIngredient(ingredient.id)"
+       ng-bind="ingredient.name"
+       ng-hide="!ingredient.active"></a>
+</p>-->
+Selected ingredients:
+<span ng-repeat="ingredientId in recipe.ingredients">
+        <span ng-bind="getIngredientName(ingredientId)"></span>
+    </p>
+    <button class="glyphicon glyphicon-remove" ng-click="removeIngredient(ingredientId)"></button>
+    </span>
 <br>
-<button ng-click="saveNewRecipe()">Add Item</button>
+<br>
+
+<!--<p ng-bind="getIngredientName(ingredientId)" ng-repeat="ingredientId in recipe.ingredients">
+    </p><!--<select multiple ng-model="recipe.ingredients" ng-options="ingredient.id as ingredient.name for ingredient in ingredients"></select>-->
 <br>
 <br>
-{{ item }}
+<button class="btn btn-s btn-info" ng-click="saveNewRecipe()">Add Recipe</button>
+<br>
+<br>
+<hr/>
+<input type="text" ng-model="tagName" placeholder="Enter a Tag"/>
+<button class="btn btn-s btn-success" ng-click="saveTag(tagName)">Add Tag</button>
+<ol>
+    <li ng-repeat="tag in recipe.tags">
+        <span ng-bind="tag.name"></span>
+    </li>
+</ol>
 <br>
 <br>
 <p>{{ status }}</p>
 
+
+<hr/>
+
+<hr/>

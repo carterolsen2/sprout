@@ -1,6 +1,12 @@
 import os
+
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 # Django settings for project.
+STATIC_URL = '/static/'
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/var/www/example.com/media/"
+MEDIA_ROOT = os.path.join(PROJECT_PATH, '..', "apps/public/media")
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -80,7 +86,7 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
     'rest_framework',
     'south',
-    'longerusername', # After installing this app, run south migrations
+    'longerusername',  # After installing this app, run south migrations
     'corsheaders',
 )
 

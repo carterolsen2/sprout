@@ -20,16 +20,43 @@ from .serializers import *
 class RecipeList(generics.ListCreateAPIView):
     # permission_classes = (permissions.IsAuthenticated,)
     model = Recipe
-    serializer_class = RecipeSerializer
+    serializer_class = NestedRecipeSerializer
     queryset = Recipe.objects.all()
+
+
+class TagDetail(generics.RetrieveUpdateDestroyAPIView):
+    model = Tag
+    serializer_class = TagSerializer
+    queryset = Tag.objects.all()
+
+
+class TagList(generics.ListCreateAPIView):
+    # permission_classes = (permissions.IsAuthenticated,)
+    model = Tag
+    serializer_class = TagSerializer
+    queryset = Tag.objects.all()
 
 
 class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
     # permission_classes = (permissions.IsAuthenticated,)
     model = Recipe
-    serializer_class = RecipeSerializer
+    serializer_class = NestedRecipeSerializer
     queryset = Recipe.objects.all()
 # Create your views here.
+
+
+class CreateRecipe(generics.CreateAPIView):
+    model = Recipe
+    serializer_class = RecipeSerializer
+    queryset = Recipe.objects.all()
+
+
+class IngredientList(generics.ListCreateAPIView):
+    # permission_classes = (permissions.IsAuthenticated,)
+    model = Ingredient
+    serializer_class = IngredientSerializer
+    queryset = Ingredient.objects.all()
+
 
 class UserList(generics.ListCreateAPIView):
     """List all users or create a new User"""

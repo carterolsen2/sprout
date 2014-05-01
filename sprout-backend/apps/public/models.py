@@ -42,12 +42,28 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
 #         verbose_name_plural = 'Addresses'
 
 class Ingredient(models.Model):
-    name = models.CharField(max_length=50)
-    glycemic_index = models.IntegerField()
+    name = models.CharField(max_length=50, unique=True)
+    glycemic_index = models.IntegerField(blank=True, null=True)
+
+    def __unicode__(self):
+        return self.name
+
+
+#name = models.CharField(max_length=50)
+#class RecipeDescription(models.Model):
+#description = models.CharField(max_length=50)
+
+
+class Tag(models.Model):
+    name = models.TextField()
+
+    def __unicode__(self):
+        return self.name
 
 
 class Recipe(models.Model):
     name = models.CharField(max_length=50)
+    photo = models.ImageField(upload_to='photos', blank=True)
     ingredients = models.ManyToManyField('Ingredient')
     cook_time = models.CharField(max_length=50)
     COOK_METHODS = (
@@ -58,13 +74,10 @@ class Recipe(models.Model):
     )
     cook_method = models.CharField(max_length=50, choices=COOK_METHODS)
     recipe_description = models.TextField()
+    tags = models.ManyToManyField(Tag)
+
     def __unicode__(self):
         return self.name
-
-
-# class RecipeDescription(models.Model):
-#     name = models.CharField(max_length=50)
-#     description = models.CharField(max_length=50)
 
 
 class Recipe(models.Model):
