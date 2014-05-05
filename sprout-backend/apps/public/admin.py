@@ -7,3 +7,6 @@ from .models import *
 admin.site.register(Recipe)
 admin.site.register(Ingredient)
 admin.site.register(Tag)
+# admin.site.register(Photo)
+#below line12; I added that because it seemed like a good idea...
+# admin.site.register(Favorite)

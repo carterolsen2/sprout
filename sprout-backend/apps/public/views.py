@@ -9,12 +9,22 @@ from rest_framework import status
 
 from rest_framework.authtoken.views import ObtainAuthToken
 
+from rest_framework.authentication import TokenAuthentication
+
 from rest_framework import generics
 from rest_framework import permissions
 
 from django.contrib.auth.models import User
 from .models import *
 from .serializers import *
+
+
+@api_view(('GET',))
+def obtain_user_from_token(r, token):
+    auth = TokenAuthentication()
+    response = auth.authenticate_credentials(token)
+    user_id = response[0].id
+    return Response(user_id)
 
 
 class RecipeList(generics.ListCreateAPIView):
@@ -28,6 +38,15 @@ class TagDetail(generics.RetrieveUpdateDestroyAPIView):
     model = Tag
     serializer_class = TagSerializer
     queryset = Tag.objects.all()
+
+
+#favorites view info
+##### ADDED THIS, IF BROKE COMMENT OUT
+# class FavoriteDetail(generics.RetrieveUpdateDestroyAPIView):
+#     model = favorite
+#     serializer_class = FavoriteSerializer
+#     queryset = Favorite.objects.all()
+#end favorite view
 
 
 class TagList(generics.ListCreateAPIView):

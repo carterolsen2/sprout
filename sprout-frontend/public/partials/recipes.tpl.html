@@ -1,31 +1,46 @@
-<label style="padding-top: 25px; padding-left: 15px;">Search by name: </label> &nbsp <input
-        type="text" ng-model="search.name">&nbsp<a class="btn btn-xs btn-success" href="#/add-recipe/{{ recipe.id }}">Add
-    A Recipe</a>
+<label style="padding-top: 25px; padding-left: 15px;">Search by name: </label>
+<input type="text" ng-model="search.name">
+<a class="btn btn-xs btn-danger" href="#/add-recipe/{{ recipe.id }}">Add A Recipe</a>
 <br>
-<label style="padding-top: 25px; padding-left: 15px;">Search by tag: </label> &nbsp <input type="text"
-                                                                                           ng-model="search.tag">
+<label style="padding-top: 25px; padding-left: 15px;">Search by tag: </label>
+<input type="text" ng-model="search.tags">
 <br>
+<br>
+Show only favorites:
+<input type="checkbox" ng-click="filterFavorites()" class="btn btn-md btn-info"/>
+<br>
+<br>
+<!--<div>
+    <label style="padding-top: 25px; padding-left: 15px;">Sort by:</label>
+    <br>
+    <label style="padding-left: 15px;">My favorites</label><input name="favorite" type="checkbox"/>
+</div>-->
 <br>
 
-<br>
-
-<div class="container, col-md-5" style="margin-left: 90px;">
-    <div class="block" ng-repeat="recipe in recipes | filter:search">
+<div class="container, col-md-12" style="margin-left: 90px;">
+    <div class="block" ng-repeat="recipe in recipes | favoritesFilter:favoriteUser | filter:search">
+        <!--Favorited by {{ recipe.favorited_by }}-->
         <p>
+            <i ng-show="ifFavorited(recipe)" style="font-size: 1.25em;"
+               class="glyphicon glyphicon-star" ng-click="unfavorite(recipe)"></i>
+            <i ng-show="!ifFavorited(recipe)" style="font-size: 1.25em;"
+               class="glyphicon glyphicon-star-empty" ng-click="favorite(recipe)"></i>
             <a href="#/recipe-details/{{ recipe.id }}">{{ recipe.name }}</a>
-            <a class="btn btn-xs btn-success" href="#/edit-recipe/{{ recipe.id }}">Edit</a>
+
+            <!--This was the early markup for setting a favorite
+            <!--<div ng-show="ifFavorited(recipe)">Favorited</div>
+            <div ng-show="!ifFavorited(recipe)">Not favorited</div>-->
+
+
+            <a class="btn btn-xs btn-danger" href="#/edit-recipe/{{ recipe.id }}">Edit</a>
         </p>
 
         <div class="block-info">
-            <div ><img class="recipe-thumbnail" src="{{ recipe.photo }}"/></div>
+            <div style="width:225px; height: 225px;"><img class="recipe-thumbnail" src="{{ recipe.photo }}"/></div>
             <p>Cook time: {{ recipe.cook_time }}</p>
 
             <p>Description: {{ recipe.recipe_description }}</p>
-            <!--        Ingredients:
-        <p ng-repeat="ingredient in recipe.ingredients">
-            {{ ingredient.name }}
-        </p>-->
-            <span ng-repeat="tag in recipe.tags" class="label label-xs label-success" ng-bind="tag.name"> </span>
+            <span ng-repeat="tag in recipe.tags" class="label label-xs label-danger" ng-bind="tag.name"> </span>
             </p>
         </div>
     </div>

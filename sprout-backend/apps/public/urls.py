@@ -18,7 +18,9 @@ urlpatterns = patterns(
 
     url(r'^ingredients$', IngredientList.as_view(), name='ingredients'),
     url(r'^tags$', TagList.as_view(), name='tag-list'),
-    url(r'^tags/(?P<pk>[0-9]+)$', TagDetail.as_view(), name='tag-detail')
+    url(r'^tags/(?P<pk>[0-9]+)$', TagDetail.as_view(), name='tag-detail'),
+
+    url(r'^getuserid/(?P<token>.+)$', obtain_user_from_token, name='getUserId')
 )
 
 urlpatterns += patterns('',

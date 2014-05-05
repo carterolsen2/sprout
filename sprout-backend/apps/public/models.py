@@ -61,11 +61,22 @@ class Tag(models.Model):
         return self.name
 
 
+###start of the favorite model
+# class Favorite(models.Model):
+#     name = models.ForeignKey('Favorite')
+#     favorite = models.ManyToManyField('User')
+#
+#     def __unicode__(self):
+#         return self.name
+###endof the favorite model
+
+
 class Recipe(models.Model):
     name = models.CharField(max_length=50)
-    photo = models.ImageField(upload_to='photos', blank=True)
+    photo = models.ImageField(upload_to='#/media/photos', blank=True)
     ingredients = models.ManyToManyField('Ingredient')
     cook_time = models.CharField(max_length=50)
+    # favorite = models.ManyToManyField('User')
     COOK_METHODS = (
         ('bake', 'Bake In The Oven'),
         ('microwave', 'Microwave'),
@@ -75,6 +86,7 @@ class Recipe(models.Model):
     cook_method = models.CharField(max_length=50, choices=COOK_METHODS)
     recipe_description = models.TextField()
     tags = models.ManyToManyField(Tag)
+    favorited_by = models.ManyToManyField(User)
 
     def __unicode__(self):
         return self.name

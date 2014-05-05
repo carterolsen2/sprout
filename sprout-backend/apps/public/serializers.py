@@ -20,6 +20,13 @@ class TagSerializer(serializers.ModelSerializer):
         model = Tag
 
 
+#favorites serializer
+# class FavoriteSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Favorite
+#end favorites serializer
+
+
 class NestedRecipeSerializer(serializers.ModelSerializer):
     ingredients = IngredientSerializer(many=True)
     tags = TagSerializer(many=True)
@@ -36,6 +43,7 @@ class NestedRecipeSerializer(serializers.ModelSerializer):
 
 class RecipeSerializer(serializers.ModelSerializer):
     ingredients = IngredientSerializer
+    # photo = serializers.SerializerMethodField('photo_path')
 
     class Meta:
         model = Recipe

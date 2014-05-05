@@ -230,10 +230,43 @@ angular.module('sproutApp.controllers', [])
 //            $scope.recipe = data;
 //        )}
     .controller('RecipeController', function ($scope, SessionService, Restangular) {
-        Restangular.all('recipes').getList().then(function (data) {
-            $scope.recipes = data;
 
+        $scope.session = SessionService.getSession();
+
+        Restangular.one('getuserid', $scope.session).customGET().then(function (data) {
+            $scope.userId = parseInt(data);
         })
 
-    });
+        Restangular.all('recipes').getList().then(function (data) {
+            $scope.recipes = data;
+        });
+
+        $scope.ifFavorited = function (recipe) {
+            for (var i = 0; i < recipe.favorited_by.length; i++) {
+                if ($scope.userId == recipe.favorited_by[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        $scope.favorite = function (recipe) {
+            recipe.favorited_by.push($scope.userId);
+            Restangular.one('recipes', recipe.id).customPUT(recipe);
+        }
+
+        $scope.unfavorite = function (recipe) {
+            var index_of_favorite = recipe.favorited_by.indexOf($scope.userId);
+            recipe.favorited_by.splice(index_of_favorite, 1);
+            Restangular.one('recipes', recipe.id).customPUT(recipe);
+        }
+       $scope.favoriteUser = '';
+        $scope.filterFavorites = function() {
+            if ($scope.favoriteUser == $scope.userId) {
+                $scope.favoriteUser = '';
+            }
+            else {
+                $scope.favoriteUser = $scope.userId;
+            }
+        }
+    })
 

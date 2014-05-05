@@ -1,3 +1,4 @@
+<br>
 <label>Name</label>
 <input type="text" ng-model="recipe.name"/>
 <br>
@@ -6,8 +7,6 @@
 <input type="text" ng-model="recipe.recipe_description"/>
 <br>
 <br>
-{{ recipe.photo }}
-<img src="{{ recipe.photo }}"/>
 <label>Cook Time</label>
 <input type="text" ng-model="recipe.cook_time"/>
 <br>
@@ -50,22 +49,22 @@ Selected ingredients:
     </p><!--<select multiple ng-model="recipe.ingredients" ng-options="ingredient.id as ingredient.name for ingredient in ingredients"></select>-->
 <br>
 <br>
-<button class="btn btn-s btn-info" ng-click="saveNewRecipe()">Add Recipe</button>
+<button class="btn btn-s btn-danger" ng-click="saveNewRecipe()">Add Recipe</button>
 <br>
 <br>
-<hr/>
 <input type="text" ng-model="tagName" placeholder="Enter a Tag"/>
-<button class="btn btn-s btn-success" ng-click="saveTag(tagName)">Add Tag</button>
+<button class="btn btn-s btn-danger" ng-click="saveTag(tagName)">Add Tag</button>
 <ol>
     <li ng-repeat="tag in recipe.tags">
         <span ng-bind="tag.name"></span>
     </li>
 </ol>
 <br>
+{#<form method="post" enctype="multipart/form-data">#}
+<div>
+    <label for="id_photo">Photo:</label>
+    <input type="file" id="id_photo" name="photo">
+</div>
+{#</form>#}
 <br>
 <p>{{ status }}</p>
-
-
-<hr/>
-
-<hr/>
