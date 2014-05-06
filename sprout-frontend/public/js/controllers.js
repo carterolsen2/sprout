@@ -116,9 +116,11 @@ angular.module('sproutApp.controllers', [])
             }
         };
 
-        var createTag = function (tagName) {
+        var createTag = function(tagName) {
             var tag = {name: tagName};
             Restangular.all('tags').customPOST(tag).then(function (tag) {
+                tag.justAdded = true;
+                $scope.tags.push(tag);
                 addTagToRecipe(tag);
             })
         };
@@ -134,6 +136,23 @@ angular.module('sproutApp.controllers', [])
             $scope.tagName = "";
         };
         //end function to save tags
+        //Removes the tag from the recipe when the tag's button is clicked //
+        $scope.removeTag = function(tag) {
+            if (tag.justAdded) {
+        //DELETE from server
+                Restangular.one('tags', tag.id).customDELETE();
+            }
+        //DELETE from $scope.tags
+            var tagIndex = $scope.tags.indexOf(tag);
+            $scope.tags.splice(tagIndex, 1);
+
+        //DELETE from $scope.recipe.tags
+            tagIndex = $scope.recipe.tags.indexOf(tag);
+            $scope.recipe.tags.splice(tagIndex, 1);
+
+            $scope.tagName = tag.name;
+            document.getElementById('tag-input').focus();
+        };
 
         //function to save ingredients
         $scope.saveIngredient = function (ingredientName) {
@@ -268,5 +287,6 @@ angular.module('sproutApp.controllers', [])
                 $scope.favoriteUser = $scope.userId;
             }
         }
+
     })
 

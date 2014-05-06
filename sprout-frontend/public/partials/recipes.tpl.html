@@ -1,5 +1,6 @@
 <label style="padding-top: 25px; padding-left: 15px;">Search by name: </label>
-<input type="text" ng-model="search.name">
+<input type="text"
+        typeahead="recipe.name for recipe in recipes | filter:$viewValue | limitTo:8" ng-model="search.name">
 <a class="btn btn-xs btn-danger" href="#/add-recipe/{{ recipe.id }}">Add A Recipe</a>
 <br>
 <label style="padding-top: 25px; padding-left: 15px;">Search by tag: </label>
@@ -35,8 +36,8 @@ Show only favorites:
             <a class="btn btn-xs btn-danger" href="#/edit-recipe/{{ recipe.id }}">Edit</a>
         </p>
 
-        <div class="block-info">
-            <div style="width:225px; height: 225px;"><img class="recipe-thumbnail" src="{{ recipe.photo }}"/></div>
+        <div style="width: 100%;" class="block-info">
+            <div style="width:225px;"><img style="width: 100%;" class="recipe-thumbnail" src="{{ recipe.photo }}"/></div>
             <p>Cook time: {{ recipe.cook_time }}</p>
 
             <p>Description: {{ recipe.recipe_description }}</p>

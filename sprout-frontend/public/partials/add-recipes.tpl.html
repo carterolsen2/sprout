@@ -1,6 +1,9 @@
 <br>
 <label>Name</label>
-<input type="text" ng-model="recipe.name"/>
+<input type="text"
+       ng-model="recipeName"
+       placeholder="Name your recipe"
+       typeahead="recipe.name for recipe in recipes | filter:$viewValue | limitTo:8">
 <br>
 <br>
 <label>Description</label>
@@ -13,7 +16,10 @@
 <br>
 <label>Ingredients</label>
 <br>
-<input type="text" ng-model="ingredientName" placeholder="Enter an Ingredient">
+<input type="text"
+       ng-model="ingredientName"
+       placeholder="Enter an Ingredient"
+       typeahead="ingredient.name for ingredient in ingredients | filter:$viewValue | limitTo:8">
 <input type="text" ng-model="glycemicIndex" placeholder="Glycemic Index">
 <button ng-click="saveIngredient(ingredientName)">Add Ingredient</button>
 
@@ -44,27 +50,34 @@ Selected ingredients:
     </span>
 <br>
 <br>
-
-<!--<p ng-bind="getIngredientName(ingredientId)" ng-repeat="ingredientId in recipe.ingredients">
-    </p><!--<select multiple ng-model="recipe.ingredients" ng-options="ingredient.id as ingredient.name for ingredient in ingredients"></select>-->
-<br>
-<br>
 <button class="btn btn-s btn-danger" ng-click="saveNewRecipe()">Add Recipe</button>
 <br>
 <br>
-<input type="text" ng-model="tagName" placeholder="Enter a Tag"/>
+<input type="text" id="tag-input"
+       ng-click="saveTag(tagName)"
+       ng-model="tagName"
+       placeholder="Enter an Tag"
+       typeahead="tag.name for tag in tags | filter:$viewValue | limitTo:8">
+
 <button class="btn btn-s btn-danger" ng-click="saveTag(tagName)">Add Tag</button>
-<ol>
+<br>
+<button ng-repeat="tag in recipe.tags"
+        ng-bind="tag.name"
+        ng-click="removeTag(tag)"
+        class="btn btn-sm btn-info label">
+
+</button>
+<!--<ol>
     <li ng-repeat="tag in recipe.tags">
         <span ng-bind="tag.name"></span>
     </li>
-</ol>
+</ol>-->
 <br>
-{#<form method="post" enctype="multipart/form-data">#}
+<!--<form method="post" enctype="multipart/form-data"/>-->
 <div>
     <label for="id_photo">Photo:</label>
     <input type="file" id="id_photo" name="photo">
 </div>
-{#</form>#}
+<!--</form>-->
 <br>
 <p>{{ status }}</p>

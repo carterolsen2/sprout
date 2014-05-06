@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="38c148fe-5aba-45c9-80a0-bb46a8e78719" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html" afterPath="$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-backend/apps/public/admin.py" afterPath="$PROJECT_DIR$/sprout-backend/apps/public/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/css/app.css" afterPath="$PROJECT_DIR$/sprout-frontend/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/js/controllers.js" afterPath="$PROJECT_DIR$/sprout-frontend/public/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/js/filters.js" afterPath="$PROJECT_DIR$/sprout-frontend/public/js/filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-backend/apps/public/models.py" afterPath="$PROJECT_DIR$/sprout-backend/apps/public/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html" afterPath="$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/index.html" afterPath="$PROJECT_DIR$/sprout-frontend/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html" afterPath="$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-backend/apps/public/serializers.py" afterPath="$PROJECT_DIR$/sprout-backend/apps/public/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-backend/apps/public/urls.py" afterPath="$PROJECT_DIR$/sprout-backend/apps/public/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprout-backend/apps/public/views.py" afterPath="$PROJECT_DIR$/sprout-backend/apps/public/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sprout.iws" />
@@ -35,27 +29,22 @@
     <favorites_list name="sprout" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.57600826">
+    <splitter split-orientation="vertical" split-proportion="0.18821096">
       <split-first>
         <leaf>
-          <file leaf-file-name="recipes.tpl.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="recipes.tpl.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.62103176" vertical-offset="299" max-vertical-offset="884">
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#i#1;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
+                <state line="1" column="18" selection-start="97" selection-end="97" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="901">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="add-recipes.tpl.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="add-recipes.tpl.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="50" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.0" vertical-offset="2145" max-vertical-offset="2475">
+                <state line="74" column="4" selection-start="2361" selection-end="2361" vertical-scroll-proportion="3.9689922" vertical-offset="746" max-vertical-offset="1496">
                   <folding />
                 </state>
               </provider>
@@ -64,7 +53,7 @@
           <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="6" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="2227">
+                <state line="58" column="6" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="2533">
                   <folding />
                 </state>
               </provider>
@@ -73,7 +62,7 @@
           <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="44" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+                <state line="15" column="44" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="680">
                   <folding />
                 </state>
               </provider>
@@ -82,7 +71,7 @@
           <file leaf-file-name="recipe-details.tpl.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1056">
+                <state line="23" column="4" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="544">
                   <folding />
                 </state>
               </provider>
@@ -91,7 +80,7 @@
           <file leaf-file-name="edit-recipe.tpl.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/edit-recipe.tpl.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="990">
+                <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="510">
                   <folding />
                 </state>
               </provider>
@@ -100,7 +89,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="55" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="3102">
+                <state line="86" column="80" selection-start="4543" selection-end="4543" vertical-scroll-proportion="-21.653847" vertical-offset="899" max-vertical-offset="1615">
                   <folding />
                 </state>
               </provider>
@@ -110,10 +99,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/js/controllers.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="8" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="983" max-vertical-offset="4726">
+                <state line="154" column="10" selection-start="5521" selection-end="5521" vertical-scroll-proportion="0.68351066" vertical-offset="2104" max-vertical-offset="5066">
                   <folding />
                 </state>
               </provider>
@@ -122,7 +111,7 @@
           <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-frontend/public/css/app.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="167" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.0" vertical-offset="5511" max-vertical-offset="9141">
+                <state line="11" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="4692">
                   <folding />
                 </state>
               </provider>
@@ -131,16 +120,16 @@
           <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/serializers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="30" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1980">
+                <state line="34" column="30" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1020">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="7" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.1458886" vertical-offset="829" max-vertical-offset="1734">
+                <state line="56" column="7" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1802">
                   <folding />
                 </state>
               </provider>
@@ -149,7 +138,7 @@
           <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/admin.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="561">
+                <state line="11" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
                   <folding />
                 </state>
               </provider>
@@ -176,10 +165,6 @@
         <option value="$PROJECT_DIR$/sprout-frontend/public/partials/add-item.tpl.html" />
         <option value="$PROJECT_DIR$/sprout-frontend/public/partials/edit-recipe.tpl.html" />
         <option value="$PROJECT_DIR$/sprout-backend/settings/base.py" />
-        <option value="$PROJECT_DIR$/sprout-frontend/public/index.html" />
-        <option value="$PROJECT_DIR$/sprout-frontend/public/css/app.css" />
-        <option value="$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html" />
-        <option value="$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html" />
         <option value="$PROJECT_DIR$/sprout-backend/apps/public/serializers.py" />
         <option value="$PROJECT_DIR$/sprout-backend/apps/public/admin.py" />
         <option value="$PROJECT_DIR$/sprout-backend/apps/public/models.py" />
@@ -188,8 +173,12 @@
         <option value="$PROJECT_DIR$/Favorites.html" />
         <option value="$PROJECT_DIR$/sprout-frontend/public/js/app.js" />
         <option value="$PROJECT_DIR$/sprout-frontend/public/js/filters.js" />
-        <option value="$PROJECT_DIR$/sprout-frontend/public/js/controllers.js" />
+        <option value="$PROJECT_DIR$/sprout-frontend/public/css/app.css" />
+        <option value="$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html" />
+        <option value="$PROJECT_DIR$/sprout-frontend/public/index.html" />
         <option value="$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html" />
+        <option value="$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html" />
+        <option value="$PROJECT_DIR$/sprout-frontend/public/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -326,10 +315,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olsen\PycharmProjects\sprout\sprout-frontend\public\lib" />
+      <recent name="C:\Users\Olsen\PycharmProjects\sprout\sprout-frontend\public\ui-bootstrap" />
       <recent name="C:\Users\Olsen\PycharmProjects\sprout\sprout-frontend\public\partials" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Sprout | node">
+  <component name="RunManager" selected="Django server.Sprout | Django">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -414,7 +405,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sprout" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -440,27 +451,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="sprout" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
@@ -581,19 +572,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21618743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21831736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62515885" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898348" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.027072757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2854188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4074457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4074457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -615,18 +606,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="55" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="476">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sprout-frontend/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="31" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1394">
@@ -686,12 +665,7 @@
     <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="83" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,12 +703,7 @@
     <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,44 +812,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/edit-recipe.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sprout-backend/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.18149467" vertical-offset="0" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="55" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="50" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.0" vertical-offset="2571" max-vertical-offset="4709">
           <folding />
         </state>
       </provider>
@@ -893,13 +827,6 @@
     <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="30" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
@@ -932,34 +859,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sprout-frontend/public/js/filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="7" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="8" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="983" max-vertical-offset="4726">
-          <folding />
-        </state>
+        <state line="30" column="7" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="7" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.1458886" vertical-offset="829" max-vertical-offset="1734">
+        <state line="56" column="7" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/edit-recipe.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipe-details.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="4692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-backend/apps/public/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/lib/ui-bootstrap/ui-bootstrap-tpls-0.11.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.46293494" vertical-offset="306" max-vertical-offset="70074">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="80" selection-start="4543" selection-end="4543" vertical-scroll-proportion="-21.653847" vertical-offset="899" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/recipes.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.62103176" vertical-offset="299" max-vertical-offset="884">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="1" column="18" selection-start="97" selection-end="97" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/partials/add-recipes.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="4" selection-start="2361" selection-end="2361" vertical-scroll-proportion="3.9689922" vertical-offset="746" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprout-frontend/public/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="10" selection-start="5521" selection-end="5521" vertical-scroll-proportion="0.68351066" vertical-offset="2104" max-vertical-offset="5066">
+          <folding />
         </state>
       </provider>
     </entry>
